@@ -2,8 +2,10 @@
 
 **Evidence from Quantum Reservoir Computing**
 
-[![License: AGPL v3](https://img.shields.io/badge/License-AGPL%20v3-blue.svg)](https://www.gnu.org/licenses/agpl-3.0)
+[![License: CC BY 4.0](https://img.shields.io/badge/License-CC%20BY%204.0-lightgrey.svg)](https://creativecommons.org/licenses/by/4.0/)
 [![Rust](https://img.shields.io/badge/Rust-1.75+-orange.svg)](https://www.rust-lang.org/)
+
+**Repository**: `Decoherence-Necessary-Integrated-Information-AVRD_2601`
 
 ## Abstract
 
@@ -12,14 +14,14 @@ This repository contains the code and experimental data supporting the discovery
 - **Pure quantum states have Φ = 0** (no integrated information)
 - **Systems coupled to thermal baths exhibit Φ > 0**
 - **Optimal noise level maximizes Φ** (stochastic resonance)
-- **Maximum Φ achieved: 0.054 bits** at intermediate noise
+- **Maximum Φ achieved: 0.0365 bits** at intermediate noise
 
 ## Key Results
 
-| Noise Level | Noise Amplitude | Φ (bits) |
-|-------------|-----------------|----------|
-| Baseline (none) | 0.0 | **0.0** |
-| Low | 0.5 | 0.00006 |
+| Noise Level | Noise Amplitude (ε) | Φ_max (bits) |
+|-------------|---------------------|--------------|
+| Baseline (none) | 0.0 | **0.0000** (exactly zero) |
+| Low | 0.5 | 0.00008 |
 | Medium | 1.0 | 0.00324 |
 | High | 2.0 | 0.01824 |
 | **Very High** | **5.0** | **0.03655** |
@@ -27,6 +29,20 @@ This repository contains the code and experimental data supporting the discovery
 | Maximum | 20.0 | 0.00273 |
 
 **Conclusion**: Φ = 0 without noise. Optimal noise produces maximum integrated information.
+
+## Figures
+
+### Figure 1: Integrated Information vs Noise Amplitude
+![Φ vs Noise](figures/fig1_phi_vs_noise.png)
+
+### Figure 2: Stochastic Resonance Fit
+![Stochastic Resonance](figures/fig2_stochastic_resonance.png)
+
+### Figure 3: System Size Scaling
+![System Scaling](figures/fig3_system_scaling.png)
+
+### Figure 4: Pure vs Mixed States Comparison
+![Baseline Comparison](figures/fig4_baseline_comparison.png)
 
 ## Physical Interpretation
 
@@ -60,8 +76,8 @@ D[L](ρ) = L ρ L† - ½{L†L, ρ}
 
 ### Build
 ```bash
-git clone https://github.com/Yatrogenesis/Noise-Consciousness-IIT.git
-cd Noise-Consciousness-IIT
+git clone https://github.com/Yatrogenesis/Decoherence-Necessary-Integrated-Information-AVRD_2601.git
+cd Decoherence-Necessary-Integrated-Information-AVRD_2601
 cargo build --release
 ```
 
@@ -87,7 +103,7 @@ python generate_figures.py
 ## Repository Structure
 
 ```
-Noise-Consciousness-IIT/
+Decoherence-Necessary-Integrated-Information-AVRD_2601/
 ├── quantum-processor/     # Lindblad dynamics & density matrices
 │   └── src/
 │       ├── lindblad.rs           # Master equation solver
@@ -113,13 +129,15 @@ Noise-Consciousness-IIT/
 │   ├── references.bib
 │   └── figures/
 │
-├── figures/               # Figure generation
+├── figures/               # Publication figures (600 DPI)
 │   ├── generate_figures.py
-│   └── data/
+│   ├── fig1_phi_vs_noise.{pdf,png,eps}
+│   ├── fig2_stochastic_resonance.{pdf,png,eps}
+│   ├── fig3_system_scaling.{pdf,png,eps}
+│   └── fig4_baseline_comparison.{pdf,png,eps}
 │
 └── results/               # Pre-computed results
-    ├── consciousness_maximum_entanglement_results.json
-    └── stress_test_summary.json
+    └── consciousness_maximum_entanglement_results.json
 ```
 
 ## Theory
@@ -130,7 +148,9 @@ IIT proposes that consciousness corresponds to integrated information Φ, which 
 
 **References**:
 - Tononi et al. (2016) "Integrated information theory: from consciousness to its physical substrate"
-- Albantakis et al. (2023) "Computing the Integrated Information of a Quantum Mechanism"
+- Albantakis et al. (2023) "IIT 4.0: Formulating the properties of phenomenal existence"
+- Zanardi et al. (2018) "Towards quantum integrated information theory"
+- Kleiner & Tull (2023) "Computing the integrated information of a quantum mechanism"
 
 ### Quantum Extension
 
@@ -146,9 +166,10 @@ For quantum systems, we compute Φ from the density matrix ρ by:
 
 | Author | Year | Key Finding |
 |--------|------|-------------|
+| Zanardi et al. | 2018 | Quantum IIT formulation with "dis-integrated" phase |
 | Tegmark | 2015 | Φ maximizes at intermediate temperature |
 | Popiel et al. | 2020 | Φ undergoes phase transition at criticality |
-| Albantakis et al. | 2023 | Formal extension of IIT to quantum systems |
+| Kleiner & Tull | 2023 | Formal extension of IIT to quantum gates |
 
 ## Citation
 
@@ -160,19 +181,23 @@ If you use this code or data, please cite:
   title = {Decoherence is Necessary for Integrated Information:
            Evidence from Quantum Reservoir Computing},
   year = {2026},
-  url = {https://github.com/Yatrogenesis/Noise-Consciousness-IIT},
-  license = {AGPL-3.0}
+  url = {https://github.com/Yatrogenesis/Decoherence-Necessary-Integrated-Information-AVRD_2601},
+  license = {CC-BY-4.0}
 }
 ```
 
 ## License
 
-This project is licensed under the **GNU Affero General Public License v3.0** (AGPL-3.0).
+This work is licensed under **Creative Commons Attribution 4.0 International (CC BY 4.0)**.
 
-**Key terms**:
-- You must disclose source code for any modifications
-- Network use (SaaS) triggers copyleft requirements
-- For commercial licensing without source disclosure, contact: fmolina@avermex.com
+You are free to:
+- **Share** — copy and redistribute the material in any medium or format
+- **Adapt** — remix, transform, and build upon the material for any purpose
+
+Under the following terms:
+- **Attribution** — You must give appropriate credit to the author
+
+Full license: https://creativecommons.org/licenses/by/4.0/
 
 ## Author
 
@@ -184,3 +209,5 @@ fmolina@avermex.com
 ---
 
 *"Consciousness requires noise."*
+
+© 2026 Francisco Molina-Burgos, Avermex Research Division
