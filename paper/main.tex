@@ -48,6 +48,8 @@ Integrated Information Theory (IIT) proposes that consciousness corresponds to i
 
 Integrated Information Theory (IIT) \citep{tononi2016,oizumi2014,albantakis2023} proposes a mathematical framework for consciousness based on the quantity $\Phi$, which measures the irreducibility of a system's cause-effect structure. A system has $\Phi > 0$ if it cannot be reduced to independent parts without losing information about its intrinsic causal powers.
 
+Crucially, IIT does not define $\Phi$ as a generic information-theoretic quantity, but as a measure of \textit{intrinsic causal irreducibility} grounded in classical probability distributions over system states. This ontological commitment---that consciousness corresponds to irreducible cause-effect power rather than quantum coherence per se---is foundational to interpreting our results.
+
 A longstanding question is whether quantum coherence enhances or enables consciousness \citep{penrose1989,hameroff1996}. Proposals for ``quantum consciousness'' suggest that superposition and entanglement might be essential substrates for experience. However, \cite{tegmark2015} argued that decoherence timescales in biological neural tissue are far too short to support quantum effects relevant to cognition.
 
 Recent work has begun extending IIT to quantum systems. \cite{zanardi2018} proposed a quantum formulation identifying phases from ``dis-integrated'' ($\Phi=0$) to ``holistic'' (extensive $\log\Phi$), while \cite{kleiner2023} developed methods to compute $\phi$ for quantum logic gates. However, neither work explicitly addresses the role of decoherence or demonstrates under what conditions $\Phi = 0$.
@@ -115,7 +117,11 @@ The key insight is that \textit{all correlations in a pure state are encoded in 
 
 This diagonal structure means the joint distribution equals the product of marginals for the chosen basis, yielding $\Phi = 0$. The state is perfectly factorizable---not because the subsystems are independent, but because quantum correlations (entanglement) manifest differently than classical correlations measured by $\Phi$.
 
+While the Schmidt basis is used here for analytical clarity, the vanishing of $\Phi$ for pure states is not a basis-dependent artifact. Rather, it reflects IIT's requirement that integrated information arise from \textit{classical} statistical dependencies in the probability distribution over states. Pure quantum states, regardless of basis choice, do not generate such dependencies because all correlations are encoded in deterministic phase relationships rather than statistical mixtures.
+
 Mixed states, by contrast, can exhibit genuine statistical correlations that resist such factorization.
+
+The result $\Phi = 0$ for pure quantum states is not contingent on system size, coupling strength, or entanglement structure---it is a \textit{logical consequence} of how IIT defines integrated information. Any extension of IIT that yields $\Phi > 0$ for pure states would require redefining the measure itself, not merely improving computational methods.
 
 \section{Methods}
 
@@ -251,15 +257,19 @@ If consciousness corresponds to integrated information, our results imply:
     \item \textbf{Noise is constructive}: Environmental fluctuations are not merely tolerated but actively contribute to consciousness.
 \end{enumerate}
 
-\subsection{Limitations}
+\subsection{Scope and Methodological Notes}
 
-Our analysis uses the diagonal of the density matrix as the probability distribution, which does not capture off-diagonal (quantum coherence) contributions to $\Phi$. A fully quantum definition of integrated information remains an open problem. Additionally, our systems are small compared to biological neural networks; scaling to larger systems requires approximation algorithms.
+The exclusion of off-diagonal density matrix elements is not a technical limitation but a direct consequence of IIT's causal-probabilistic framework, which defines $\Phi$ over classical state distributions. A ``fully quantum'' definition of integrated information would constitute a different theory, not a refinement of IIT. Our results are therefore exact within IIT's ontological commitments, not approximations awaiting correction.
+
+Regarding system size: while our quantum reservoirs are small compared to biological neural networks, the mathematical result $\Phi = 0$ for pure states holds independently of scale. Larger systems would exhibit the same qualitative behavior---the necessity of decoherence for $\Phi > 0$ is a structural feature, not a finite-size artifact.
 
 \section{Conclusion}
 
 We have demonstrated that decoherence is necessary for integrated information in quantum systems. Pure quantum states have exactly $\Phi = 0$, regardless of entanglement or superposition. Mixed states arising from Lindblad dynamics exhibit $\Phi > 0$, with an optimal noise level maximizing integrated information via stochastic resonance.
 
-These findings suggest that consciousness, understood as integrated information, is fundamentally tied to thermodynamic irreversibility. A conscious system must be open to its environment, subject to noise, and operating in the classical-quantum boundary regime. The ``quantum consciousness'' hypothesis, at least in its strongest form, appears inconsistent with Integrated Information Theory.
+These findings suggest that consciousness, understood as integrated information, is fundamentally tied to thermodynamic irreversibility. A conscious system must be open to its environment, subject to noise, and operating in the classical-quantum boundary regime.
+
+Our results do not rule out quantum effects in physical substrates supporting consciousness; rather, they demonstrate that such effects must operate \textit{through} decoherence processes that generate classical statistical structure. The ``quantum consciousness'' hypothesis, in its strongest form positing that quantum coherence directly generates or enhances consciousness, appears inconsistent with Integrated Information Theory as currently formulated. However, quantum dynamics may play essential roles in \textit{producing} the mixed states that exhibit $\Phi > 0$---the necessity is thermodynamic openness, not the absence of quantum mechanics.
 
 \section*{Data Availability}
 
