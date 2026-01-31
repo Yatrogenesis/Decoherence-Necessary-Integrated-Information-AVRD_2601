@@ -6,7 +6,7 @@
 [![License: CC BY 4.0](https://img.shields.io/badge/License-CC%20BY%204.0-lightgrey.svg)](https://creativecommons.org/licenses/by/4.0/)
 [![Rust](https://img.shields.io/badge/Rust-1.75+-orange.svg)](https://www.rust-lang.org/)
 
-**Repository**: `Decoherence-Necessary-Integrated-Information-AVRD_2601`
+**Repository**: `Decoherence-Necessary-Integrated-Information`
 
 ## Abstract
 
@@ -77,8 +77,8 @@ D[L](ρ) = L ρ L† - ½{L†L, ρ}
 
 ### Build
 ```bash
-git clone https://github.com/Yatrogenesis/Decoherence-Necessary-Integrated-Information-AVRD_2601.git
-cd Decoherence-Necessary-Integrated-Information-AVRD_2601
+git clone https://github.com/Yatrogenesis/Decoherence-Necessary-Integrated-Information.git
+cd Decoherence-Necessary-Integrated-Information
 cargo build --release
 ```
 
@@ -104,7 +104,7 @@ python generate_figures.py
 ## Repository Structure
 
 ```
-Decoherence-Necessary-Integrated-Information-AVRD_2601/
+Decoherence-Necessary-Integrated-Information/
 ├── quantum-processor/     # Lindblad dynamics & density matrices
 │   └── src/
 │       ├── lindblad.rs           # Master equation solver

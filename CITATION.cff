@@ -9,10 +9,10 @@ authors:
 title: "Decoherence is Necessary for Integrated Information: Evidence from Quantum Reservoir Computing"
 version: 1.0.0
 date-released: 2026-01-29
-url: "https://github.com/Yatrogenesis/Decoherence-Necessary-Integrated-Information-AVRD_2601"
+url: "https://github.com/Yatrogenesis/Decoherence-Necessary-Integrated-Information"
 doi: "10.5281/zenodo.17932389"
 license: CC-BY-4.0
-repository-code: "https://github.com/Yatrogenesis/Decoherence-Necessary-Integrated-Information-AVRD_2601"
+repository-code: "https://github.com/Yatrogenesis/Decoherence-Necessary-Integrated-Information"
 identifiers:
   - type: doi
     value: "10.5281/zenodo.17932389"
